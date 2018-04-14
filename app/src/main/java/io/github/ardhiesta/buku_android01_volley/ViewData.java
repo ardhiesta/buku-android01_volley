@@ -71,42 +71,6 @@ public class ViewData extends AppCompatActivity {
     }
 
     private void getData() {
-//        RequestQueue mRequestQueue;
-//
-//        // Instantiate the cache
-//        Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024); // 1MB cap
-//
-//        // Set up the network to use HttpURLConnection as the HTTP client.
-//        Network network = new BasicNetwork(new HurlStack());
-//
-//        // Instantiate the RequestQueue with the cache and network.
-//        mRequestQueue = new RequestQueue(cache, network);
-//
-//        // Start the queue
-//        mRequestQueue.start();
-//
-//        // Formulate the request and handle the response.
-//        StringRequest stringRequest = new StringRequest(Request.Method.GET, Config.getdata,
-//                new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        // Do something with the response
-//                        System.out.println("");
-//                    }
-//                },
-//                new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        // Handle error
-//                        System.out.println("");
-//                    }
-//                });
-//
-//        // Add the request to the RequestQueue.
-//        mRequestQueue.add(stringRequest);
-
-
-
 //        showProgressDialog();
         StringRequest strReq = new StringRequest(Request.Method.GET, Config.getdata, new Response.Listener<String>() {
             @Override
